@@ -72,12 +72,49 @@
             cursor: pointer;
             transition: all 0.3s ease;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-button::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(
+                45deg,
+                transparent,
+                rgba(255, 0, 150, 0.1),
+                rgba(0, 204, 255, 0.1),
+                rgba(128, 255, 0, 0.1),
+                rgba(255, 255, 0, 0.1),
+                rgba(255, 128, 0, 0.1),
+                rgba(255, 0, 255, 0.1),
+                transparent
+            );
+            transform: rotate(0deg);
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            animation: rainbow-spin 3s linear infinite;
+            animation-play-state: paused;
+        }
+
+        @keyframes rainbow-spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
         }
 
         .contact-button:hover {
-            background-color: #f0f0f0;
+            background-color: #f8f8f8;
             transform: translateY(-2px);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        .contact-button:hover::before {
+            opacity: 1;
+            animation-play-state: running;
         }
 
         .contact-button:active {
