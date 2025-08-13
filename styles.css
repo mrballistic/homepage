@@ -27,7 +27,6 @@ body {
 .cloud {
     position: absolute;
     opacity: 0.25;
-    animation: cloud-move 40s linear infinite;
     z-index: -1;
 }
 .cloud1 {
@@ -35,6 +34,7 @@ body {
     height: 55px;
     top: 10vh;
     left: -140px;
+    animation: cloud-move 50s linear infinite;
     animation-delay: 0s;
 }
 .cloud2 {
@@ -42,6 +42,7 @@ body {
     height: 70px;
     top: 30vh;
     left: -180px;
+    animation: cloud-move 35s linear infinite;
     animation-delay: 10s;
     opacity: 0.35;
 }
@@ -50,6 +51,7 @@ body {
     height: 45px;
     top: 60vh;
     left: -100px;
+    animation: cloud-move 60s linear infinite;
     animation-delay: 20s;
     opacity: 0.25;
 }
