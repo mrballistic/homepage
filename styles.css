@@ -30,6 +30,7 @@ body {
     height: 60px;
     opacity: 0.25;
     animation: cloud-move 40s linear infinite;
+    z-index: -1;
 }
 .cloud1 {
     top: 10vh;
