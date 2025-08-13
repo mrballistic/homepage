@@ -26,24 +26,28 @@ body {
 
 .cloud {
     position: absolute;
-    width: 120px;
-    height: 60px;
     opacity: 0.25;
     animation: cloud-move 40s linear infinite;
     z-index: -1;
 }
 .cloud1 {
+    width: 110px;
+    height: 55px;
     top: 10vh;
     left: -140px;
     animation-delay: 0s;
 }
 .cloud2 {
+    width: 140px;
+    height: 70px;
     top: 30vh;
     left: -180px;
     animation-delay: 10s;
     opacity: 0.35;
 }
 .cloud3 {
+    width: 90px;
+    height: 45px;
     top: 60vh;
     left: -100px;
     animation-delay: 20s;
