@@ -16,31 +16,29 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
 <body>
+
     <div class="clouds-bg">
         <img src="clouds.png" class="cloud cloud1" alt="cloud">
         <img src="clouds.png" class="cloud cloud2" alt="cloud">
         <img src="clouds.png" class="cloud cloud3" alt="cloud">
     </div>
 
+    <div class="container">
         <h1>Hello World!</h1>
-        
-
+        <div class="photo-container">
             <img src="profile-square.jpg" alt="Profile Photo" class="photo">
         </div>
-        
         <!-- Weather Widget Container -->
-
+        <div class="weather-widget" id="weather-widget">
             <div class="weather-header">
                 <h3>Current Weather</h3>
                 <div class="location" id="location">Loading location...</div>
             </div>
-            
             <div class="weather-content">
                 <div class="temperature-section">
                     <div class="temperature" id="temperature">--°</div>
                     <div class="weather-icon" id="weather-icon">☀️</div>
                 </div>
-                
                 <div class="weather-details">
                     <div class="detail-item">
                         <span class="label">Condition:</span>
@@ -56,12 +54,10 @@
                     </div>
                 </div>
             </div>
-            
             <div class="weather-error" id="weather-error" style="display: none;">
                 Unable to load weather data. Please try again later.
             </div>
         </div>
-        
         <button class="contact-button" onclick="alert('Contact functionality coming soon!')">
             Contact Me
         </button>
